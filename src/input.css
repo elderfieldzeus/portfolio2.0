@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'KiwiMaru-Light';
+    src: url("../../public/fonts/KiwiMaru-Light.ttf");
+}
+
+@font-face {
+    font-family: 'KiwiMaru-Medium';
+    src: url("../../public/fonts/KiwiMaru-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'KiwiMaru-Regular';
+    src: url("../../public/fonts/KiwiMaru-Regular.ttf");
+}
