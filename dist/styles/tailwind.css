@@ -558,16 +558,44 @@ video {
   position: fixed;
 }
 
-.sticky {
-  position: sticky;
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.top-5 {
-  top: 1.25rem;
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .flex {
@@ -578,48 +606,54 @@ video {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
-.h-3 {
-  height: 0.75rem;
+.size-40 {
+  width: 10rem;
+  height: 10rem;
 }
 
-.h-3\.5 {
-  height: 0.875rem;
+.size-60 {
+  width: 15rem;
+  height: 15rem;
 }
 
-.h-3\/4 {
-  height: 75%;
-}
-
-.h-lvh {
-  height: 100lvh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[1\] {
-  height: 1;
-}
-
-.h-\[75vh\] {
-  height: 75vh;
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .h-10 {
   height: 2.5rem;
 }
 
-.w-screen {
-  width: 100vw;
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .list-none {
@@ -632,14 +666,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .gap-9 {
@@ -660,19 +686,9 @@ video {
   background-color: rgb(224 224 224 / var(--tw-bg-opacity));
 }
 
-.bg-tertiary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-5 {
@@ -692,18 +708,9 @@ video {
   font-family: KiwiMaru-Regular, sans-serif;
 }
 
-.font-kiwi_medium {
-  font-family: KiwiMaru-Medium, sans-serif;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-base {
@@ -711,14 +718,14 @@ video {
   line-height: 1.5rem;
 }
 
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(224 224 224 / var(--tw-text-opacity));
-}
-
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(18 18 18 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(224 224 224 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -737,18 +744,6 @@ video {
   font-family: 'KiwiMaru-Regular';
 
   src: url("../../public/fonts/KiwiMaru-Regular.ttf");
-}
-
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
 }
 
 @media (min-width: 1024px) {
