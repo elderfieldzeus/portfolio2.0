@@ -12,7 +12,13 @@ module.exports = {
         kiwi_light: ['KiwiMaru-Light', 'sans-serif'],
         kiwi_medium: ['KiwiMaru-Medium', 'sans-serif'],
         kiwi_regular: ['KiwiMaru-Regular', 'sans-serif']
-      }
+      },
+      // keyframes: {
+        
+      // },
+      // animation: {
+        
+      // }
     }
   },
   plugins: [],
