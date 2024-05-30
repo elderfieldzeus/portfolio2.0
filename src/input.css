@@ -16,3 +16,12 @@
     font-family: 'KiwiMaru-Regular';
     src: url("../../public/fonts/KiwiMaru-Regular.ttf");
 }
+
+@layer components {
+    .landing_nav {
+        @apply w-full h-screen text-secondary font-kiwi_light flex flex-col justify-center items-center bg-primary text-center z-10;
+    }
+    .focus_nav {
+        @apply w-full text-secondary fixed top-0 px-8 py-5 font-kiwi_light flex justify-between items-center bg-primary text-center z-10;
+    }
+}
