@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../styles/tailwind.css">
 </head>
 <body>
-    <div class="bg-black rotate-12 fixed h-[200vh] w-[40vw] -top-36 -left-72"></div>
-    <div class="bg-black rotate-[-12deg] fixed h-[200vh] w-[40vw] -top-36 -right-72"></div>
+    <div class="lights rotate-12 -left-72"></div>
+    <div class="lights rotate-[-12deg] -right-72"></div>
 
     <!-- nav section -->
     <nav class="landing_nav">
-        <div class="text-5xl font-kiwi_regular"><a class="hover:cursor-default" href="#">zeus elderfield.</a></div>
-        <div class="text-base font-kiwi_regular mb-10">aspiring software engineer.</div>
-        <ul class="hidden lg:flex gap-8 list-none text-base scroll-smooth">
+        <div class="text-5xl font-kiwi_regular transition-all duration-1000"><a class="hover:cursor-default" href="#">zeus elderfield.</a></div>
+        <div class="text-base font-kiwi_regular mb-10 transition-all duration-1000">aspiring software engineer.</div>
+        <ul class="hidden lg:flex gap-8 list-none text-base scroll-smooth transition-all duration-1000">
             <li><a href="./home.html#home">home.</a></li>
             <li><a href="./home.html#about">about.</a></li>
             <li><a href="./home.html#experience">experience.</a></li>
@@ -24,5 +24,7 @@
             <li><a href="./home.html#contact">contact.</a></li>
         </ul>
     </nav>
+
+    <script src="../script/animation.js"></script>
 </body>
 </html>

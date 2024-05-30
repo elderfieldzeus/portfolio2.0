@@ -19,9 +19,12 @@
 
 @layer components {
     .landing_nav {
-        @apply w-full h-screen text-secondary font-kiwi_light flex flex-col justify-center items-center bg-primary text-center z-10;
+        @apply w-full h-screen text-secondary font-kiwi_light flex flex-col justify-center items-center bg-primary text-center z-10 transition-all duration-1000;
     }
     .focus_nav {
-        @apply w-full text-secondary fixed top-0 px-8 py-5 font-kiwi_light flex justify-between items-center bg-primary text-center z-10;
+        @apply w-full text-secondary fixed top-0 px-8 py-5 font-kiwi_light flex justify-between items-center bg-primary text-center z-10 transition-all duration-1000;
+    }
+    .lights {
+        @apply bg-black  fixed h-[200vh] w-[40vw] -top-36 transition-all duration-1000;
     }
 }
