@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="../styles/animations.css">
 </head>
 <body class="bg-primary">
-    <div class="hidden lights rotate-12 -left-72"></div>
-    <div class="hidden lights rotate-[-12deg] -right-72"></div>
+    <div id="leftLight" class="lights rotate-12 -left-72 bg-gradient-to-r "></div>
+    <div id="rightLight" class="lights rotate-[-12deg] -right-72 bg-gradient-to-l"></div>
 
     <!-- nav section -->
-    <nav class="w-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-secondary font-kiwi_light bg-primary text-center transition-all duration-1000">
-        <div id="name" class="text-5xl font-kiwi_regular transition-all duration-1000"><a class="hover:cursor-default" href="./home.html">zeus elderfield.</a></div>
-        <div id="soft_eng" class="text-base font-kiwi_regular mb-10 transition-all duration-1000">aspiring software engineer.</div>
+    <nav id="navbar" class="w-full fixed flex items-center px-8 py-5 text-secondary font-kiwi_light text-center">
+        <div id="name" class="font-kiwi_regular transition-all duration-1000"><a class="hover:cursor-default" href="./home.html">zeus elderfield.</a></div>
+        <div id="softeng" class="text-base font-kiwi_regular mb-10 transition-all duration-[400ms]">aspiring software engineer.</div>
         <ul id="anchors" class="hidden lg:flex gap-8 list-none text-base scroll-smooth transition-all duration-1000">
             <li><a href="./home.html#home">home.</a></li>
             <li><a href="./home.html#about">about.</a></li>

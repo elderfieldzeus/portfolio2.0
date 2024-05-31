@@ -1,8 +1,14 @@
-@keyframes left {
-    from {
-        top: 0;
-    }
-    to {
-        top: 100vh;
-    }
+/* separated for animation purposes */
+#navbar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    transition:all 1000ms, opacity 400ms;
+}
+
+#name {
+    font-size: 3rem;
+    line-height: 1;
 }

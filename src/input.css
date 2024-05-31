@@ -25,6 +25,6 @@
         @apply w-full text-secondary fixed top-0 px-8 py-5 font-kiwi_light flex justify-between items-center bg-primary text-center z-20 transition-all duration-1000;
     }
     .lights {
-        @apply bg-black fixed h-[200vh] w-[40vw] -top-36 transition-all duration-1000 z-10;
+        @apply bg-black fixed h-[250vh] w-[40vw] -top-36 transition-all duration-[800ms] z-10 from-black from-95% to-primary;
     }
 }
