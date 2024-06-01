@@ -12,3 +12,25 @@
     font-size: 3rem;
     line-height: 1;
 }
+
+.lights {
+    top: -9rem;
+}
+
+#leftLight {
+    rotate: 12deg;
+}
+
+#rightLight {  
+    rotate: -12deg;
+}
+
+section, footer {
+    opacity: 0;
+    display: none;
+    transition:all 1000ms, opacity 400ms;
+}
+
+.home > #name {
+    cursor: pointer;
+}

@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>portfolio.</title>
     <link rel="stylesheet" href="../styles/tailwind.css">
     <link rel="stylesheet" href="../styles/animations.css">
 </head>
 <body class="bg-primary">
-    <div id="leftLight" class="lights rotate-12 -left-72 bg-gradient-to-r "></div>
-    <div id="rightLight" class="lights rotate-[-12deg] -right-72 bg-gradient-to-l"></div>
+    <!-- shadow for landing page -->
+    <div id="leftLight" class="lights -left-72 bg-gradient-to-r "></div>
+    <div id="rightLight" class="lights -right-72 bg-gradient-to-l"></div>
 
     <!-- nav section -->
-    <nav id="navbar" class="w-full fixed flex items-center px-8 py-5 text-secondary font-kiwi_light text-center">
-        <div id="name" class="font-kiwi_regular transition-all duration-1000"><a class="hover:cursor-default" href="./home.html">zeus elderfield.</a></div>
+    <nav id="navbar" class="w-full fixed flex items-center px-8 py-5 bg-primary text-secondary font-kiwi_light text-center">
+        <div id="name" class="font-kiwi_regular transition-all duration-1000">zeus elderfield.</div>
         <div id="softeng" class="text-base font-kiwi_regular mb-10 transition-all duration-[400ms]">aspiring software engineer.</div>
         <ul id="anchors" class="hidden lg:flex gap-8 list-none text-base scroll-smooth transition-all duration-1000">
-            <li><a href="./home.html#home">home.</a></li>
-            <li><a href="./home.html#about">about.</a></li>
-            <li><a href="./home.html#experience">experience.</a></li>
-            <li><a href="./home.html#skills">skills.</a></li>
-            <li><a href="./home.html#projects">projects.</a></li>
-            <li><a href="./home.html#gallery">gallery.</a></li>
-            <li><a href="./home.html#contact">contact.</a></li>
+            <li><a href="#home">home.</a></li>
+            <li><a href="#about">about.</a></li>
+            <li><a href="#experience">experience.</a></li>
+            <li><a href="#skills">skills.</a></li>
+            <li><a href="#projects">projects.</a></li>
+            <li><a href="#gallery">gallery.</a></li>
+            <li><a href="#contact">contact.</a></li>
         </ul>
     </nav>
+
+    <!-- home section -->
+    <section id="home" class="font-kiwi_light h-screen w-full bg-primary text-secondary flex-col justify-center items-center">
+        <img class="-mt-32 size-32 opacity-0 hover:opacity-100 transition-opacity delay-100" src="../../public/images/stickman.webp" alt="stickman">
+        <p id="welcome" class="text-6xl">welcome to my portfolio.</p>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="h-[85vh] w-full bg-secondary text-primary scroll-mt-16">
+
+    </section>
+
+    <!-- experience section -->
+    <section id="experience" class="h-[85vh] w-full bg-primary text-secondary scroll-mt-16">
+
+    </section>
+
+    <!-- skills section -->
+    <section id="skills" class="h-[85vh] w-full bg-secondary text-primary scroll-mt-16">
+
+    </section>
+
+    <!-- projects section -->
+    <section id="projects" class="h-[85vh] w-full bg-primary text-secondary scroll-mt-16">
+
+    </section>
+
+    <!-- gallery section -->
+    <section id="gallery" class="h-[85vh] w-full bg-secondary text-primary scroll-mt-16">
+
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="h-[85vh] w-full bg-primary text-secondary scroll-mt-16">
+
+    </section>
+
+    <!-- footer section -->
+    <footer class="h-10 w-full bg-secondary text-primary">
+
+    </footer>
 
     <script src="../script/animation.js"></script>
 </body>
