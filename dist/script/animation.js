@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll("li > a");
 const navbar = document.getElementById("navbar");
-const name = document.getElementById("name");
+const Name = document.getElementById("name");
 
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
@@ -14,7 +14,7 @@ buttons.forEach((button) => {
     });
 });
 
-name.addEventListener("click", () => {
+Name.addEventListener("click", () => {
     if(navbar.classList.contains('home')) {
         window.location.href = '#home';
         setTimeout(() => {
@@ -37,8 +37,8 @@ function navbarRise(href) {
     navbar.style['left'] = 0;
     navbar.style['transform'] = 'translate(0,0)';
     navbar.style['opacity'] = '0';
-    name.style['font-size'] = '2.25rem';
-    name.style['line-height'] = '2.5rem';
+    Name.style['font-size'] = '2.25rem';
+    Name.style['line-height'] = '2.5rem';
     leftLight.style['left'] = rightLight.style['right']  = '-80rem';
     leftLight.style['top'] = rightLight.style['top']  = '-60rem';
     leftLight.style['rotate'] = '25deg';
@@ -82,12 +82,9 @@ function navbarFade() {
     leftLight.style['display'] = rightLight.style['display']  = 'block';
 
     navbar.style['z-index'] = 0;
-    navbar.style['top'] = '50%';
-    navbar.style['left'] = '50%';
-    navbar.style['transform'] = 'translate(-50%,-50%)';
     navbar.style['opacity'] = '0';
-    name.style['font-size'] = '3rem';
-    name.style['line-height'] = '1';
+    Name.style['font-size'] = '3rem';
+    Name.style['line-height'] = '1';
 
     sections.forEach((section) => {
         section.style['opacity'] = '0';
@@ -96,11 +93,21 @@ function navbarFade() {
     footer.style['opacity'] = '0';
 
     setTimeout(() => {
+        navbar.style['top'] = '50%';
+        navbar.style['left'] = '50%';
+        navbar.style['transform'] = 'translate(-50%,-50%)';
+    }, 400);
+
+    setTimeout(() => {
         leftLight.style['left'] = rightLight.style['right']  = '-18rem';
         leftLight.style['top'] = rightLight.style['top']  = '-9rem';
         leftLight.style['rotate'] = '12deg';
         rightLight.style['rotate']  = '-12deg';
-    }, 400);
+
+        sections.forEach((section) => {
+            section.style['display'] = 'none';
+        });
+    }, 500);
 
     setTimeout(()=> {
         navbar.style['flex-direction'] = 'column';
@@ -110,10 +117,4 @@ function navbarFade() {
 
         footer.style['display'] = 'none';
     }, 800);
-
-    setTimeout(() => {
-        sections.forEach((section) => {
-            section.style['display'] = 'none';
-        });
-    }, 500)
 }
