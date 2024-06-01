@@ -554,29 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.focus_nav {
-  position: fixed;
-  top: 0px;
-  z-index: 20;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  text-align: center;
-  font-family: KiwiMaru-Light, sans-serif;
-  --tw-text-opacity: 1;
-  color: rgb(224 224 224 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 1000ms;
-}
-
 .lights {
   position: fixed;
   z-index: 10;
@@ -681,6 +658,11 @@ video {
   background-color: rgb(224 224 224 / var(--tw-bg-opacity));
 }
 
+.bg-tertiary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-l {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -709,11 +691,6 @@ video {
 
 .font-kiwi_regular {
   font-family: KiwiMaru-Regular, sans-serif;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-6xl {

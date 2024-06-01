@@ -4,7 +4,6 @@ const navbar = document.getElementById("navbar");
 const Name = document.getElementById("name");
 
 //home variable for fade animation
-const home = document.getElementById("home");
 let inHome = true;
 
 //intersection observers
@@ -31,7 +30,7 @@ Name.addEventListener("click", () => {
         setTimeout(() => {
             navbarFade();
             navbar.classList.remove('scroll');
-        }, (inHome == true) ? 0 : 800);
+        }, (inHome == true) ? 0 : 600);
         
     }
 });
@@ -134,6 +133,8 @@ function navbarFade() {
 
 //home intersection observer function
 function listenHome() {
+    const home = document.getElementById("home");
+
     const home_observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
