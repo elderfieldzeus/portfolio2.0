@@ -31,6 +31,25 @@ section, footer {
     transition:all 1000ms, opacity 400ms;
 }
 
-.home > #name {
+.scroll > #name {
     cursor: pointer;
+}
+
+li {
+    position: relative;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    background-color: #E0E0E0;
+    bottom: -1px;
+    left: 0;
+    width: var(--after-width);
+    height: 1px;
+    transition: all 500ms;
+}
+
+li:hover::after{
+    width: 100%;
 }

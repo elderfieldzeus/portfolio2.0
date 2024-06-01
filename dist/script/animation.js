@@ -1,30 +1,42 @@
+//global variable declaration
 const buttons = document.querySelectorAll("li > a");
 const navbar = document.getElementById("navbar");
 const Name = document.getElementById("name");
 
+//home variable for fade animation
+const home = document.getElementById("home");
+let inHome = true;
+
+//intersection observers
+listenHome();
+listenList();
+
+//entering main website
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
-        if(!navbar.classList.contains('home')) {
+        if(!navbar.classList.contains('scroll')) {
             e.preventDefault();
 
             const href = button.href;
             navbarRise(href);
-            navbar.classList.add('home');
+            navbar.classList.add('scroll');
         }
     });
 });
 
+//leaving main website
 Name.addEventListener("click", () => {
-    if(navbar.classList.contains('home')) {
+    if(navbar.classList.contains('scroll')) {
         window.location.href = '#home';
         setTimeout(() => {
             navbarFade();
-            navbar.classList.remove('home');
-        }, 800);
+            navbar.classList.remove('scroll');
+        }, (inHome == true) ? 0 : 800);
         
     }
 });
 
+//entering main website animation
 function navbarRise(href) {
     const softeng = document.getElementById("softeng");
     const leftLight = document.getElementById("leftLight");
@@ -70,6 +82,7 @@ function navbarRise(href) {
     }, 1000);
 }
 
+//leaving main website animation
 function navbarFade() {
     const navbar = document.getElementById("navbar");
     const softeng = document.getElementById("softeng");
@@ -118,3 +131,51 @@ function navbarFade() {
         footer.style['display'] = 'none';
     }, 800);
 }
+
+//home intersection observer function
+function listenHome() {
+    const home_observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              inHome = true;
+          }
+          else {
+              inHome = false;
+          }
+        });
+      }, {
+          root: null,
+          rootMargin: "0px",
+          threshold: [0.1, 1]
+      });
+      
+      home_observer.observe(home);
+}
+
+//section intersection observer function
+function listenList() {
+    const lists = document.querySelectorAll("li");
+
+    lists.forEach((list) => {
+        const id = list.firstChild.href.split('#')[1];
+
+        const element = document.getElementById(id);
+
+        const list_observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting) {
+                    list.style.setProperty('--after-width', '100%');
+                }
+                else {
+                    list.style.setProperty('--after-width', '0');
+                }
+            })
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: [0.5, 1]
+        });
+
+        list_observer.observe(element);
+    });
+} 
