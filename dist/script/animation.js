@@ -59,7 +59,7 @@ function navbarRise(href) {
         section.style['display'] = 'flex';
     });
 
-    footer.style['display'] = 'block';
+    footer.style['display'] = 'flex';
 
     setTimeout(()=> {
         navbar.style['flex-direction'] = 'row';
