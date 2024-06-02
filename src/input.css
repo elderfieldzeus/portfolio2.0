@@ -24,4 +24,13 @@
     .title {
         @apply text-4xl mb-14 font-kiwi_regular text-center;
     }
+    .header1 {
+        @apply font-kiwi_regular text-2xl;
+    }
+    .header2 {
+        @apply font-kiwi_regular text-lg;
+    }
+    .info {
+        @apply flex items-end gap-2;
+    }
 }

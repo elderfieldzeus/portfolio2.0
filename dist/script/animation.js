@@ -191,10 +191,12 @@ function welcomeAnimation() {
     welcome.addEventListener("mouseover", () => {
         dancer.style['opacity'] = 1;
         welcome.style.setProperty('--firework-opacity', '1');
+        welcome.style['text-shadow'] = '0 0 5px #E0E0E0';
     });
 
     welcome.addEventListener("mouseout", () => {
         dancer.style['opacity'] = 0;
         welcome.style.setProperty('--firework-opacity', '0');
+        welcome.style['text-shadow'] = 'none';
     });
 }

@@ -579,12 +579,26 @@ video {
   line-height: 2.5rem;
 }
 
-.fixed {
-  position: fixed;
+.header1 {
+  font-family: KiwiMaru-Regular, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.absolute {
-  position: absolute;
+.header2 {
+  font-family: KiwiMaru-Regular, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .relative {
@@ -597,30 +611,6 @@ video {
 
 .-right-72 {
   right: -18rem;
-}
-
-.left-40 {
-  left: 10rem;
-}
-
-.right-40 {
-  right: 10rem;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
 }
 
 .-mt-32 {
@@ -652,11 +642,6 @@ video {
   height: 8rem;
 }
 
-.size-56 {
-  width: 14rem;
-  height: 14rem;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -665,8 +650,16 @@ video {
   height: 24rem;
 }
 
+.h-\[26rem\] {
+  height: 26rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-auto {
@@ -675,6 +668,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .scroll-mt-16 {
@@ -709,8 +706,20 @@ video {
   gap: 5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-8 {
   gap: 2rem;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .scroll-smooth {
@@ -737,6 +746,11 @@ video {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-8 {
@@ -766,11 +780,6 @@ video {
   font-family: KiwiMaru-Regular, sans-serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -795,10 +804,6 @@ video {
   color: rgb(224 224 224 / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -811,18 +816,16 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .delay-100 {
   transition-delay: 100ms;
 }
 
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .duration-700 {
@@ -854,10 +857,6 @@ video {
 .hover\:bg-tertiary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 44 / var(--tw-bg-opacity));
-}
-
-.hover\:opacity-100:hover {
-  opacity: 1;
 }
 
 @media (min-width: 1024px) {

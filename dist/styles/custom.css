@@ -131,3 +131,28 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
     transition: opacity 500ms;
     transition-delay: 100ms;
 }
+
+
+
+/* contact page */
+#mrbean-phone {
+    object-position: -12rem;
+}
+
+.icons > a > span {
+    transition: all 500ms;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.facebook-svg:hover {
+    background-color: #4267B2;
+}
+
+.github-svg:hover {
+    background-color: #24292e;
+}
+
+.linkedin-svg:hover {
+    background-color: #0077B5;
+}
