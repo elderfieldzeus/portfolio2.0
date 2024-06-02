@@ -21,4 +21,7 @@
     .lights {
         @apply bg-black fixed h-[250vh] w-[40vw] transition-all duration-[800ms] z-10 from-black from-95% to-primary;
     }
+    .title {
+        @apply text-4xl mb-14 font-kiwi_regular text-center;
+    }
 }

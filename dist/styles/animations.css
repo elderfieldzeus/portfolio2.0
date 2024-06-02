@@ -38,6 +38,16 @@
     rotate: -12deg;
 }
 
+section {
+    padding: 60px;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
 section, footer {
     opacity: 0;
     display: none;
