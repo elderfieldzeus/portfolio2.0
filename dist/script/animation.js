@@ -10,6 +10,9 @@ let inHome = true;
 listenHome();
 listenList();
 
+//firework and dancing hover animation
+welcomeAnimation();
+
 //entering main website
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
@@ -180,3 +183,18 @@ function listenList() {
         list_observer.observe(element);
     });
 } 
+
+function welcomeAnimation() {
+    const welcome = document.getElementById("welcome");
+    const dancer = document.getElementById("dancer");
+
+    welcome.addEventListener("mouseover", () => {
+        dancer.style['opacity'] = 1;
+        welcome.style.setProperty('--firework-opacity', '1');
+    });
+
+    welcome.addEventListener("mouseout", () => {
+        dancer.style['opacity'] = 0;
+        welcome.style.setProperty('--firework-opacity', '0');
+    });
+}

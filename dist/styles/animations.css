@@ -1,4 +1,4 @@
-/* separated for animation purposes */
+/* scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -12,32 +12,7 @@
     border-radius: 10rem;
 }
 
-#navbar {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    justify-content: center;
-    transition:all 1000ms, opacity 400ms;
-}
-
-#name {
-    font-size: 3rem;
-    line-height: 1;
-}
-
-.lights {
-    top: -9rem;
-}
-
-#leftLight {
-    rotate: 12deg;
-}
-
-#rightLight {  
-    rotate: -12deg;
-}
-
+/* general section padding and wrapper */
 section {
     padding: 60px;
 }
@@ -52,6 +27,22 @@ section, footer {
     opacity: 0;
     display: none;
     transition:all 1000ms, opacity 400ms;
+}
+
+
+/* navbar */
+#navbar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    transition:all 1000ms, opacity 400ms;
+}
+
+#name {
+    font-size: 3rem;
+    line-height: 1;
 }
 
 .scroll > #name {
@@ -75,4 +66,68 @@ li::after {
 
 li:hover::after{
     width: 100%;
+}
+
+/* lights for landing page */
+.lights {
+    top: -9rem;
+}
+
+#leftLight {
+    rotate: 12deg;
+}
+
+#rightLight {  
+    rotate: -12deg;
+}
+
+/* home page */
+
+/* 
+GIF Credit: 
+Title: Happy Good Times Sticker
+Author: @wearetactical
+Source: https://giphy.com/stickers/wearetactical-transparent-wYWXoZ9ho4BtSMZxwZ
+*/
+#dancer {
+    opacity: 0;
+    transition: opacity 500ms;
+    transition-delay: 100ms;
+}
+
+#welcome {
+    --firework-opacity: 0;
+}
+
+/* 
+GIF Credit: 
+Title: Celebrate New Year Sticker
+Author: @schlumpftine
+Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-white-ElybFqRGtPpTVq85xs
+*/
+#welcome::before {
+    --firework-size: 2rem;
+    content: url('../../public/images/fireworks.gif');
+    position: absolute;
+    left: -350px;
+    top: -300px;
+    height: var(--firework-size);
+    width: var(--firework-size);
+    opacity: var(--firework-opacity);
+    transition: opacity 500ms;
+    transition-delay: 100ms;
+}
+
+#welcome::after {
+    --firework-size: 2rem;
+    content: url('../../public/images/fireworks.gif');
+    position: absolute;
+    right: -350px;
+    top: -300px;
+    height: var(--firework-size);
+    width: var(--firework-size);
+    transform: rotateY(180deg);
+    opacity: var(--firework-opacity);
+    transition: opacity 150ms;
+    transition-delay: 100ms;
 }
