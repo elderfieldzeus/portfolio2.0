@@ -128,6 +128,6 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
     width: var(--firework-size);
     transform: rotateY(180deg);
     opacity: var(--firework-opacity);
-    transition: opacity 150ms;
+    transition: opacity 500ms;
     transition-delay: 100ms;
 }
