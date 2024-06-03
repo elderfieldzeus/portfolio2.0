@@ -11,7 +11,8 @@ module.exports = {
       fontFamily: {
         kiwi_light: ['KiwiMaru-Light', 'sans-serif'],
         kiwi_medium: ['KiwiMaru-Medium', 'sans-serif'],
-        kiwi_regular: ['KiwiMaru-Regular', 'sans-serif']
+        kiwi_regular: ['KiwiMaru-Regular', 'sans-serif'],
+        ignotum: ['Ignotum', 'sans-serif']
       },
       // keyframes: {
         

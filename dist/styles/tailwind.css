@@ -593,7 +593,7 @@ video {
 
 .info {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -627,6 +627,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .flex {
@@ -714,10 +718,6 @@ video {
   gap: 2rem;
 }
 
-.self-center {
-  align-self: center;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -772,6 +772,10 @@ video {
   text-align: center;
 }
 
+.font-ignotum {
+  font-family: Ignotum, sans-serif;
+}
+
 .font-kiwi_light {
   font-family: KiwiMaru-Light, sans-serif;
 }
@@ -792,6 +796,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-primary {
@@ -852,6 +860,12 @@ video {
   font-family: 'KiwiMaru-Regular';
 
   src: url("../../public/fonts/KiwiMaru-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Ignotum';
+
+  src: url("../public/fonts/Ignotum-9MoMZ.ttf");
 }
 
 .hover\:bg-tertiary:hover {

@@ -17,6 +17,11 @@
     src: url("../../public/fonts/KiwiMaru-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Ignotum';
+    src: url("../public/fonts/Ignotum-9MoMZ.ttf");
+}
+
 @layer components {
     .lights {
         @apply bg-black fixed h-[250vh] w-[40vw] transition-all duration-[800ms] z-10 from-black from-95% to-primary;
@@ -31,6 +36,6 @@
         @apply font-kiwi_regular text-lg;
     }
     .info {
-        @apply flex items-end gap-2;
+        @apply flex items-center gap-2;
     }
 }
