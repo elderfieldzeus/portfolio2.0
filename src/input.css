@@ -38,4 +38,10 @@
     .info {
         @apply flex items-center gap-2;
     }
+    .card {
+        @apply h-52 rounded-lg bg-primary p-2;
+    }
+    .card-image {
+        @apply rounded-sm w-full h-full object-cover;
+    }
 }

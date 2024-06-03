@@ -597,6 +597,22 @@ video {
   gap: 0.5rem;
 }
 
+.card {
+  height: 13rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .fixed {
   position: fixed;
 }
@@ -629,12 +645,12 @@ video {
   margin-top: 1rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -666,6 +682,10 @@ video {
   width: 15rem;
 }
 
+.w-\[1300px\] {
+  width: 1300px;
+}
+
 .w-auto {
   width: auto;
 }
@@ -684,6 +704,10 @@ video {
 
 .list-none {
   list-style-type: none;
+}
+
+.grid-cols-\[repeat\(3\2c _1fr\)\] {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .flex-col {
@@ -758,6 +782,11 @@ video {
   padding-right: 2rem;
 }
 
+.px-\[100px\] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -770,6 +799,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-ignotum {
