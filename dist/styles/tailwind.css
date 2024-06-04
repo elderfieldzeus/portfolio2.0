@@ -598,7 +598,7 @@ video {
 }
 
 .card {
-  height: 13rem;
+  height: 205px;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
