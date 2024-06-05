@@ -42,6 +42,9 @@
         @apply h-[205px] rounded-lg bg-primary p-2 relative;
     }
     .card-image {
-        @apply rounded-sm w-full h-full object-cover;
+        @apply absolute rounded-sm object-cover;
+    }
+    .back-card {
+        @apply absolute flex flex-col items-center text-secondary gap-5 p-5;
     }
 }

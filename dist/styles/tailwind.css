@@ -607,19 +607,29 @@ video {
 }
 
 .card-image {
-  height: 100%;
-  width: 100%;
+  position: absolute;
   border-radius: 0.125rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.fixed {
-  position: fixed;
+.back-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(224 224 224 / var(--tw-text-opacity));
 }
 
-.absolute {
-  position: absolute;
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .relative {
@@ -632,26 +642,6 @@ video {
 
 .-right-72 {
   right: -18rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
-.m-2 {
-  margin: 0.5rem;
 }
 
 .-mt-32 {
@@ -797,14 +787,6 @@ video {
      object-fit: cover;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -835,22 +817,6 @@ video {
 
 .text-justify {
   text-align: justify;
-}
-
-.indent-2 {
-  text-indent: 0.5rem;
-}
-
-.indent-5 {
-  text-indent: 1.25rem;
-}
-
-.indent-10 {
-  text-indent: 2.5rem;
-}
-
-.indent-8 {
-  text-indent: 2rem;
 }
 
 .indent-6 {
@@ -900,11 +866,6 @@ video {
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(224 224 224 / var(--tw-text-opacity));
-}
-
-.text-primary {
-  --tw-text-opacity: 1;
-  color: rgb(18 18 18 / var(--tw-text-opacity));
 }
 
 .shadow {
