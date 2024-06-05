@@ -2,9 +2,15 @@
 const buttons = document.querySelectorAll("li > a");
 const navbar = document.getElementById("navbar");
 const Name = document.getElementById("name");
-
 //home variable for fade animation
 let inHome = true;
+
+
+
+
+
+
+//FUNCTION CALLS
 
 //intersection observers
 listenHome();
@@ -15,6 +21,17 @@ backgroundAssignment();
 
 //firework and dancing hover animation
 welcomeAnimation();
+
+//flip cards
+flipCards();
+
+
+
+
+
+
+
+//FUNCTION DEFINITIONS
 
 function backgroundAssignment() {
     const sections = document.querySelectorAll("section");
@@ -211,4 +228,21 @@ function welcomeAnimation() {
         welcome.style.setProperty('--firework-opacity', '0');
         welcome.style['text-shadow'] = 'none';
     });
+}
+
+function flipCards() {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+        card.addEventListener("click", () => {
+            if(card.classList.contains('flipped')) {
+                card.style['transform'] = 'none';
+                card.classList.remove('flipped');
+            }
+            else {
+                card.style['transform'] = 'rotateY(180deg)';
+                card.classList.add('flipped');
+            }
+        });
+    })
 }

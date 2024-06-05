@@ -133,6 +133,16 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
 }
 
 /* projects page */
+#projects_header:after {
+    content: "(press to flip card.)";
+    position: absolute;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .projects_grid {
     perspective: 1000px;
 }
@@ -140,8 +150,9 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
 .card {
     position: relative;
     transition: transform 500ms;
-    transition-delay: 200ms;
+    transition-delay: 100ms;
     transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .card-image {
@@ -160,8 +171,8 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
     backface-visibility: hidden;
 }
 
-.card:hover {
-    transform: rotateY(180deg);
+#repo-svg:hover {
+    background-color: #2c2c2c;
 }
 
 /* contact page */
@@ -193,7 +204,7 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
 }
 
 .github-svg:hover {
-    background-color: #24292e;
+    background-color: #0d74e7;
 }
 
 .linkedin-svg:hover {
