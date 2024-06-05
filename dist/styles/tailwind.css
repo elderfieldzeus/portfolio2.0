@@ -598,6 +598,7 @@ video {
 }
 
 .card {
+  position: relative;
   height: 205px;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -617,6 +618,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -627,6 +632,14 @@ video {
 
 .-right-72 {
   right: -18rem;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-3 {
+  left: 0.75rem;
 }
 
 .-mt-32 {
@@ -825,6 +838,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {

@@ -10,8 +10,20 @@ let inHome = true;
 listenHome();
 listenList();
 
+//zebra background assignment
+backgroundAssignment();
+
 //firework and dancing hover animation
 welcomeAnimation();
+
+function backgroundAssignment() {
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section, index) => {
+        section.style.color = (index % 2) ? '#121212' : '#E0E0E0';
+        section.style.backgroundColor = (index % 2) ? '#E0E0E0' : '#121212';
+    });
+}
 
 //entering main website
 buttons.forEach((button) => {
