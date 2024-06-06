@@ -155,13 +155,31 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
     cursor: pointer;
 }
 
-.card-image {
+.front-card {
     height: calc(100% - 1rem);
     width: calc(100% - 1rem);
     
     position: absolute;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+}
+
+.card-filter {
+    height: 0%;
+}
+
+.front-card:hover > .card-filter {
+    height: 100%;
+}
+
+.flip-svg {
+    transition: all 150ms;
+    transition-delay: 250ms;
+    opacity: 0;
+}
+
+.front-card:hover .flip-svg {
+    opacity: 1;
 }
 
 .back-card {

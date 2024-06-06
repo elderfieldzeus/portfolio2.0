@@ -10,8 +10,12 @@
 </head>
 <body class="bg-primary">
     <!-- shadow for landing page -->
-    <div id="leftLight" class="lights -left-72 bg-gradient-to-r "></div>
-    <div id="rightLight" class="lights -right-72 bg-gradient-to-l"></div>
+    <div id="leftLight" class="lights -left-72 bg-gradient-to-r ">
+
+    </div>
+    <div id="rightLight" class="lights -right-72 bg-gradient-to-l">
+
+    </div>
 
     <!-- nav section -->
     <nav id="navbar" class="w-full fixed flex items-center px-8 py-5 bg-primary text-secondary font-kiwi_light text-center">
@@ -75,7 +79,12 @@
                 <!-- around 337px width and 189px height of image in card -->
                 <div id="projects_grid" class="w-full grid grid-cols-[repeat(3,_1fr)] gap-5">
                     <div class="card">
-                        <img class="card-image" src="../../public/images/project-images/litratos.png" alt="Litratos">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="../../public/images/project-images/litratos.png" alt="Litratos">
+                        </div>
+                        
+                        
                         
                         <div class="back-card">
                             <h1 class="text-2xl">litratos.</h1>
@@ -85,7 +94,10 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-image" src="../../public/images/project-images/valorandomizer.png" alt="Valo Randomizer">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="../../public/images/project-images/valorandomizer.png" alt="Valo Randomizer">
+                        </div>
 
                         <div class="back-card">
                             <h1 class="text-2xl">valo randomizer.</h1>
@@ -95,7 +107,10 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-image" src="../../public/images/project-images/gentmode.png" alt="Gentmode Barbers">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="../../public/images/project-images/gentmode.png" alt="Gentmode Barbers">
+                        </div>
 
                         <div class="back-card">
                             <h1 class="text-2xl">gentmode barbers.</h1>
@@ -105,7 +120,10 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-image" src="../../public/images/project-images/vintage-royale.png" alt="Vintage Royale">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="../../public/images/project-images/vintage-royale.png" alt="Vintage Royale">
+                        </div>
 
                         <div class="back-card">
                             <h1 class="text-2xl">vintage royale.</h1>
@@ -115,7 +133,10 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-image" src="../../public/images/project-images/todo-c.png" alt="Todo C">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="../../public/images/project-images/todo-c.png" alt="Todo C">
+                        </div>
 
                         <div class="back-card">
                             <h1 class="text-2xl">to-do list in c.</h1>
@@ -125,7 +146,10 @@
                     </div>
 
                     <div class="card">
-                        <img class="card-image" src="../../public/images/project-images/library.png" alt="Personal Library">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="../../public/images/project-images/library.png" alt="Personal Library">
+                        </div>
 
                         <div class="back-card">
                             <h1 class="text-2xl">personal library.</h1>
@@ -190,8 +214,8 @@
     </section>
 
     <!-- footer section -->
-    <footer class="h-10 w-full bg-primary text-secondary justify-center items-center font-semibold font-ignotum">
-        &copy; Zeus D. Elderfield 2024
+    <footer class="h-10 w-full bg-primary text-secondary justify-center items-center font-kiwi_light text-sm">
+        Copyright &copy; 2024 - Created by Zeus D. Elderfield
     </footer>
 
     <script src="../script/animation.js"></script>

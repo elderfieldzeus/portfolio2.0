@@ -42,12 +42,15 @@
         @apply h-[205px] rounded-lg bg-primary p-2 relative;
     }
     .card-image {
-        @apply absolute rounded-sm object-cover;
+        @apply absolute rounded-sm object-cover w-full h-full;
     }
     .back-card {
         @apply absolute flex flex-col items-center text-secondary gap-5 p-5;
     }
     .project-repo {
         @apply absolute top-1 right-1 size-6;
+    }
+    .card-filter {
+        @apply absolute w-full bottom-0 bg-tertiary bg-opacity-50 z-10 transition-all duration-300 delay-150 flex justify-center items-center;
     }
 }
