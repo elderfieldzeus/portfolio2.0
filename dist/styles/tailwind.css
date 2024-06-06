@@ -846,28 +846,12 @@ video {
   text-indent: 1.5rem;
 }
 
-.font-ignotum {
-  font-family: Ignotum, sans-serif;
-}
-
 .font-kiwi_light {
   font-family: KiwiMaru-Light, sans-serif;
 }
 
 .font-kiwi_regular {
   font-family: KiwiMaru-Regular, sans-serif;
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -892,10 +876,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .text-secondary {
