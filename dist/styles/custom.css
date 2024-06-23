@@ -133,7 +133,7 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
 }
 
 /* projects page */
-#projects_header:after {
+#projects_header::after {
     content: "(press to flip card.)";
     position: absolute;
     font-size: 0.875rem;
@@ -192,6 +192,21 @@ Source: https://giphy.com/stickers/schlumpftine-ao-nuevo-feliz-new-years-eve-whi
 #repo-svg:hover {
     background-color: #2c2c2c;
 }
+
+
+/* gallery page */
+
+#gallery_header::after {
+    content: "my memory collection.";
+    position: absolute;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 /* contact page */
 #mrbean-phone {
