@@ -943,6 +943,14 @@ video {
   src: url("../public/fonts/Ignotum-9MoMZ.ttf");
 }
 
+.hover\:cursor-auto:hover {
+  cursor: auto;
+}
+
+.hover\:cursor-default:hover {
+  cursor: default;
+}
+
 .hover\:bg-tertiary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 44 / var(--tw-bg-opacity));
