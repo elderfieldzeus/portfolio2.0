@@ -25,6 +25,9 @@ welcomeAnimation();
 //flip cards
 flipCards();
 
+//carousel
+galleryCarousel();
+
 
 
 
@@ -187,7 +190,7 @@ function listenHome() {
 
 //section intersection observer function
 function listenList() {
-    const lists = document.querySelectorAll("li");
+    const lists = document.querySelectorAll("#anchors>li");
 
     lists.forEach((list) => {
         const id = list.firstChild.href.split('#')[1];
@@ -232,17 +235,38 @@ function welcomeAnimation() {
 
 function flipCards() {
     const cards = document.querySelectorAll(".card");
+    const filter = document.querySelectorAll(".card-filter");
 
-    cards.forEach((card) => {
+    cards.forEach((card, index) => {
         card.addEventListener("click", () => {
             if(card.classList.contains('flipped')) {
                 card.style['transform'] = 'none';
                 card.classList.remove('flipped');
+                filter[index].style['display'] = 'flex';
             }
             else {
                 card.style['transform'] = 'rotateY(180deg)';
                 card.classList.add('flipped');
+                filter[index].style['display'] = 'none';
             }
         });
+    })
+}
+
+function galleryCarousel() {
+    const buttons = document.querySelectorAll("[data-carousel-button]");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
+            const slides = document.querySelector(".gallery-slides");
+            const active = slides.querySelector("[data-active]");
+            let newIndex = [...slides.children].indexOf(active) + offset;
+            if(newIndex < 0) newIndex = slides.children.length - 1;
+            if(newIndex >= slides.children.length) newIndex = 0;
+
+            slides.children[newIndex].dataset.active = "";
+            delete active.dataset.active;
+        })
     })
 }

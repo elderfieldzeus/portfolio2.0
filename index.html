@@ -37,8 +37,8 @@
 
     <!-- home section -->
     <section id="home" class="relative font-kiwi_light h-screen w-full bg-primary text-secondary flex-col justify-center items-center">
-        <img id="dancer" class="-mt-32 size-32" src="./public/images/stickman.webp" alt="stickman">
-        <p id="welcome" class="text-6xl relative transition-all duration-500 delay-100 hover:cursor-default">welcome to my portfolio.</p>
+        <img id="dancer" class="-mt-32 size-32 select-none" src="./public/images/stickman.webp" alt="stickman">
+        <p id="welcome" class="text-6xl relative transition-all duration-500 delay-100 hover:cursor-default select-none">welcome to my portfolio.</p>
     </section>
 
     <!-- about section -->
@@ -84,11 +84,20 @@
                     <div class="card">
                         <div class="front-card">
                             <div class="card-filter"><span class="flip-svg"></span></div>
-                            <img class="card-image" src="./public/images/project-images/litratos.png" alt="Litratos">
+                            <img class="card-image" src="./public/images/project-images/foamfusion.png" alt="Foam Fusion">
+                        </div>                        
+                        <div class="back-card">
+                            <h1 class="text-2xl">foamfusion.</h1>
+                            <p class="text-justify text-sm indent-6">an innovative information system, inspired by cutting-edge platforms, offers a seamless solution for managing, tracking, and enhancing foamfusion's soap business.</p>
+                            <a class="project-repo" href="https://github.com/elderfieldzeus/foamfusion" target="_blank"><span class="github-svg transition-all duration-300" id="repo-svg"></a>
                         </div>
-                        
-                        
-                        
+                    </div>
+
+                    <div class="card">
+                        <div class="front-card">
+                            <div class="card-filter"><span class="flip-svg"></span></div>
+                            <img class="card-image" src="./public/images/project-images/litratos.png" alt="Litratos">
+                        </div>                        
                         <div class="back-card">
                             <h1 class="text-2xl">litratos.</h1>
                             <p class="text-justify text-sm indent-6">a cutting-edge online gallery, Litratos is inspired by Google Drive, offering a streamlined platform for organizing, sharing, and showcasing your photography collection.</p>
@@ -184,7 +193,38 @@
         <div class="wrapper w-[1300px] px-[100px]">
             <p id="gallery_header" class="title">gallery.</p>
 
-            
+            <div class="min-h-[36rem] w-full rounded-xl shadow-gray-800 relative overflow-hidden">
+                <button class="px-1 py-4 bg-tertiary opacity-30 hover:opacity-50 transition-all absolute z-10 top-1/2 -translate-y-1/2 left-0" data-carousel-button="prev"><span class="left-svg bg-secondary size-10"></span></button>
+                <button class="px-1 py-4 bg-tertiary opacity-30 hover:opacity-50 transition-all absolute z-10 top-1/2 -translate-y-1/2 right-0" data-carousel-button="next"><span class="right-svg bg-secondary size-10"></span></button>
+                
+                <div class="gallery-slides">
+
+                    <div class="slide" data-active>
+                        <img src="/public/images/zeus.png" alt="Logo" class="h-full">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/public/images/gallery-images/fam.jpg" alt="" class="h-full w-full object-cover object-[0_-2rem]">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/public/images/gallery-images/bab.jpg" alt="" class="h-full w-full object-cover object-[0_-12rem]">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/public/images/gallery-images/freyadebut.jpg" alt="" class="h-full w-full object-cover object-top">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/public/images/gallery-images/prog2.jpg" alt="" class="h-full w-full object-cover object-[0_-12rem]">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/public/images/gallery-images/lolalolo.jpg" alt="" class="h-full w-full object-cover object-[-0.1rem_-5rem]">
+                    </div>
+
+                </div>
+            </div> 
         </div>
     </section>
 

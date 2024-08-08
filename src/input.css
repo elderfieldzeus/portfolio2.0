@@ -39,10 +39,10 @@
         @apply flex items-center gap-2;
     }
     .card {
-        @apply h-[205px] rounded-lg bg-primary p-2 relative;
+        @apply h-[205px] rounded-lg bg-primary p-1 relative shadow-xl;
     }
     .card-image {
-        @apply absolute rounded-sm object-cover w-full h-full;
+        @apply absolute rounded-md object-cover w-full h-full;
     }
     .back-card {
         @apply absolute flex flex-col items-center text-secondary gap-5 p-5;
@@ -52,5 +52,8 @@
     }
     .card-filter {
         @apply absolute w-full bottom-0 bg-tertiary bg-opacity-50 z-10 transition-all duration-300 delay-150 flex justify-center items-center;
+    }
+    .slide {
+        @apply w-full h-full absolute flex justify-center select-none;
     }
 }
